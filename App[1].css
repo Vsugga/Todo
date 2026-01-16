@@ -1,0 +1,256 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.add-todo {
+  display: flex;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.add-todo input {
+  flex-grow: 1;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.add-todo button {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-todo button:hover {
+  background-color: #45a049;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+  background-color: #f0f0f0;
+}
+
+.todo-item.completed {
+  background-color: #e8f5e8;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 15px;
+  width: 18px;
+  height: 18px;
+}
+
+.todo-text {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+}
+
+.edit-section {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.edit-section input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.edit-section input:focus {
+  border-color: #4CAF50;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions button:first-child {
+  background-color: #2196F3;
+  color: white;
+}
+
+.actions button:first-child:hover {
+  background-color: #1976D2;
+}
+
+.actions button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.actions button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+.edit-section button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.edit-section button:hover {
+  background-color: #45a049;
+}
+
+.edit-section button:last-child {
+  background-color: #9E9E9E;
+  color: white;
+}
+
+.edit-section button:last-child:hover {
+  background-color: #757575;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.auth-form {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-form h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.auth-form button:hover {
+  background-color: #45a049;
+}
+
+.auth-form p {
+  color: #666;
+  cursor: pointer;
+  margin: 0;
+}
+
+.auth-form p:hover {
+  color: #4CAF50;
+}
+
+.error {
+  color: #f44336;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
